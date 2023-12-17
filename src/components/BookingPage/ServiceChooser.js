@@ -115,9 +115,9 @@ export const ServiceChooser = (props) => {
             date:date.toString()
         };
         
-        init("user_NI2YtL4qPeOue4aib0abR");
+        init("rtn5NhLpbKFlCmguw");
 
-        emailjs.send('service_nxyq4yu','template_5qzcb4c', templateParams, 'user_NI2YtL4qPeOue4aib0abR')
+        emailjs.send('service_dxmpq0h','template_iio89ir', templateParams, 'rtn5NhLpbKFlCmguw')
             .then((response) => {
                setShow(true);
                setSuccessText(true);
@@ -141,7 +141,7 @@ export const ServiceChooser = (props) => {
            
             <Card className = "service-chooser-main-div" sx={{backgroundColor:"#37393d", boxShadow:"12px 12px 2px 1px rgba(32, 32, 32, 0.747)"}}>
                 <h2>Service details</h2>
-                {warningText ? <p style={{ color: 'red' }}>Please give us all the informations for the proper booking!</p> : <p>Please choose the date carefully</p>}
+                {warningText ? <p style={{ color: 'red' }}>Please provide us all required information for a proper booking!</p> : <p>Please choose the date carefully</p>}
                 {successText ? <p style={{ color: 'green' }}>Thank you for your booking! We will contact you as soon as possible on the given phone number!</p> : <p>Our staff will call you after successful booking</p>}
                 <div className = 'service-possibilities-div'>
                     <div className="service-date-chooser">
